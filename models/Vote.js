@@ -27,7 +27,6 @@ Vote.init(
       },
     },
   },
-
   {
     sequelize,
     timestamps: false,

@@ -1,5 +1,6 @@
-const User = require("./User");
+// import all models
 const Post = require("./Post");
+const User = require("./User");
 const Vote = require("./Vote");
 const Comment = require("./Comment");
 
@@ -23,6 +24,7 @@ Post.belongsToMany(User, {
   as: "voted_posts",
   foreignKey: "post_id",
 });
+
 Vote.belongsTo(User, {
   foreignKey: "user_id",
 });
